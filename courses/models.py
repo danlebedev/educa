@@ -86,6 +86,10 @@ class Content(models.Model):
         'content_type',
         'object_id',
     )
+    order = OrderField(
+        blank=True,
+        for_fields=['module'],
+    )
 
 
 class ItemBase(models.Model):
